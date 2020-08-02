@@ -1,0 +1,16 @@
+.list {
+  background-color: $athens-gray;
+  border-bottom: 1px solid #000;
+  list-style-type: decimal;
+  padding: 15px 0;
+
+  @include e(link) {
+    color: maroon;
+    display: block;
+    padding: 5px 15px;
+
+    @include hover {
+      color: lighten($color: maroon, $amount: 20%);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  background-color: $valencia;
+  color: $white;
+  padding: 30px;
+
+  @include e(link) {
+    color: $white;
+
+    @include hover;
+  }
+}
