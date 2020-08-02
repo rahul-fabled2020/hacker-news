@@ -1,13 +1,21 @@
 .list {
   background-color: $athens-gray;
-  border-bottom: 1px solid #000;
-  list-style-type: decimal;
   padding: 15px 0;
 
+  @include mq(sm) {
+    list-style-type: decimal;
+  }
+
   @include e(link) {
+    border: 1px solid $valencia;
     color: maroon;
     display: block;
     padding: 5px 15px;
+    margin-bottom: 10px;
+
+    @include mq(sm) {
+      border: 0;
+    }
 
     @include hover {
       color: lighten($color: maroon, $amount: 20%);
