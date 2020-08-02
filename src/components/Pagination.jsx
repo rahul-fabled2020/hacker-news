@@ -54,7 +54,7 @@ function Pagination(props) {
         {pageNumber - 2 >= 0 && (
           <button
             onClick={onClick}
-            className="pagination__button"
+            className="pagination__button pagination__button--special"
             value={pageNumber - 2 >= 0 ? pageNumber - 2 : 0}
           >
             {currentPageNumber - 2}
@@ -88,7 +88,7 @@ function Pagination(props) {
         {pageNumber +2 <= finalPageNumber && (
           <button
             onClick={onClick}
-            className="pagination__button"
+            className="pagination__button pagination__button--special"
             value={
               pageNumber + 2 <= finalPageNumber
                 ? pageNumber + 2

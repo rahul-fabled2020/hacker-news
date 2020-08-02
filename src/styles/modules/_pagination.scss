@@ -3,7 +3,12 @@
 
   @include e(info) {
     float: left;
+    display: none;
     padding: 8px 16px;
+
+    @include mq(md) {
+      display: block;
+    }
   }
 
   @include e(info-number) {
@@ -21,6 +26,14 @@
     transition: background-color 0.3s;
     border: 1px solid $athens-gray;
     margin: 0 4px;
+
+    @include m(special) {
+      display: none;
+
+      @include mq(lg) {
+        display: block;
+      }
+    }
 
     @include m(active) {
       background-color: $valencia;
