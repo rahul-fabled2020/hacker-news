@@ -43,7 +43,12 @@
   }
 
   @include e(items-count) {
+    display: none;
     float: left;
+
+    @media(min-width: 425px) {
+      display: block;
+    }
   }
 
   @include e(label) {
