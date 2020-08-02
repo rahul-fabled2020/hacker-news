@@ -10,7 +10,7 @@ const DefaultPage = () => (
 );
 
 const AppRouter = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/hacker-news">
     <div>
       <Header />
       <Switch>
