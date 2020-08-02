@@ -50,4 +50,8 @@
     font-size: 0.8em;
     font-weight: normal;
   }
+
+  @include e(text) {
+    overflow: hidden;
+  }
 }

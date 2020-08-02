@@ -11,7 +11,7 @@ function Comment(props) {
           </span>
         </div>
       )}
-      <div dangerouslySetInnerHTML={{ __html: props.text }} />
+      <div className="comments__text" dangerouslySetInnerHTML={{ __html: props.text }} />
     </div>
   );
 }
